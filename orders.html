@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Orders | AJIO</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/orders.css">
+    <link rel="icon" href="images/A-logo.png">
+</head>
+<body>
+    <div class="header">
+        <img class="header-Ajio-logo" src="images/Ajio-Icon.png">
+        <div class="header-category-div">
+            <span class="men-category category">MEN</span>
+            <span class="women-category category">WOMEN</span>
+            <span class="kids-category category">KIDS</span>
+        </div>
+        <div class="header-search-div">
+            <input class="header-search" type="text" placeholder="Search AJIO" onkeydown="searchedProduct(event)"><button class="header-search-logo" onclick="searchedProduct('Click')"><img src="images/search-icon.png"></button>
+        </div>
+        <button class="wish-list-btn" onclick="location.href='wishlist.html'">&#9825;</button>
+        <button class="cart-btn" onclick="location.href='cart.html'"><img src="images/Cart-logo.png"></button>
+    </div>
+
+<center class="ordered-products-container">
+    <div class="orders-container">
+        <div class="orders-titles-div">
+            <h1>My Orders</h1>
+            <p>Track your open orders & view the summary of your past orders</p>
+        </div>
+        <div class="orders-main-div">
+            
+        </div>
+    </div>
+</center>
+
+<div class="bottom-div">
+    <div class="bottom-img-div">
+    <img src="images/handpicked-icon.png">
+    <img src="images/assured-quality-icon.png">
+    </div>
+    <div class="bottom-text-div">
+        <span>100% Handpicked</span>
+        <span>Assured Quality</span>
+    </div>
+</div>
+
+<div class="bottom-main-div">
+    <img class="bottom-logo" src="images/ajio-bottom-logo.png">
+    <span class="copyright-sym">&copy; Sravani 2024</span>
+</div>
+
+<script src="scripts/index.js"></script>
+<script src="scripts/orders.js"></script>
+</body>
+</html>

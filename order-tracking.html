@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/order-tracking.css">
+    <link rel="stylesheet" href="styles/orders.css">
+    <title>Tracking | AJIO</title>
+    <link rel="icon" href="images/A-logo.png">
+</head>
+<body>
+    <div class="header">
+        <img class="header-Ajio-logo" src="images/Ajio-Icon.png">
+        <div class="header-category-div">
+            <span class="men-category category">MEN</span>
+            <span class="women-category category">WOMEN</span>
+            <span class="kids-category category">KIDS</span>
+        </div>
+        <div class="header-search-div">
+            <input class="header-search" type="text" placeholder="Search AJIO" onkeydown="searchedProduct(event)"><button class="header-search-logo" onclick="searchedProduct('Click')"><img src="images/search-icon.png"></button>
+        </div>
+        <button class="wish-list-btn" onclick="location.href='wishlist.html'">&#9825;</button>
+        <button class="cart-btn" onclick="window.location.href = 'cart.html'"><img src="images/Cart-logo.png"></button>
+    </div>
+
+    <div class="backtoOrders-div">
+        <button onclick="window.location.href='orders.html'" class="back-orders-a" href="orders.html"><img src="https://nirosivanathan.com/img/left-arrow.svg" width="11px"> &nbsp; Back to Orders</button>
+    </div>
+
+<center>
+    <div class="order-tracking-main-container">
+        <div class="ordered-tracking-container">
+            <div class="O-T-header">
+                <div class="delivery-shipping-info">
+                    <img class="delivery-status-logo" src="">
+                    <span class="delivery-status-title" value=""></span>
+                </div>
+                <div class="delivery-progress-bar">
+                    <button class="progress-bar-btn"></button>
+                        <button class="progress-btn progress-btn1"></button>
+    
+                        <button class="progress-btn progress-btn2"></button>
+    
+                        <button class="progress-btn progress-btn3"></button>
+    
+                        <button class="progress-btn progress-btn4"></button>
+                    <button class="dotted-line-bar"></button>
+                </div>
+
+                <div class="delivery-shipping-tracking-names">
+                </div>
+            </div>
+        <div class="ordered-products-main-div">
+        </div>
+        </div>
+
+        <div class="ordered-price-details-container">
+        </div>
+    </div>
+    </center>
+
+    <center>
+        <div class="confirm-cancel-item">
+            <p class="title">Cancel Item</p>
+            <p class="instruction">Are you sure you want to cancel this item?</p>
+            <button class="btn1 cancel-item-btn1">NO</button><button class="btn2 cancel-item-btn2">YES, I'M SURE</button>
+        </div>
+    </center>
+
+    <div class="bottom-div">
+        <div class="bottom-img-div">
+        <img src="images/handpicked-icon.png">
+        <img src="images/assured-quality-icon.png">
+        </div>
+        <div class="bottom-text-div">
+            <span>100% Handpicked</span>
+            <span>Assured Quality</span>
+        </div>
+    </div>
+    
+    <div class="bottom-main-div">
+        <img class="bottom-logo" src="images/ajio-bottom-logo.png">
+        <span class="copyright-sym">&copy; ravani 2024</span>
+    </div>
+
+<script src="scripts/index.js"></script>
+<script src="scripts/order-tracking.js"></script>
+</body>
+</html>

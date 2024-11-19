@@ -1,0 +1,283 @@
+html{
+    background-color: #f7f7f7;
+}
+
+.backtoOrders-div{
+    margin: 130px 0 20px 0;
+    width: 100%;
+}
+.backtoOrders-div button{
+    margin-left: 70px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #1A6F94;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    height: 20px;
+    cursor: pointer;
+}
+
+.O-T-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+}
+.delivery-shipping-info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 50px;
+}
+.delivery-shipping-info img{
+    width: 4%;
+}
+.delivery-shipping-info span{
+    font-size: 23px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+.delivery-progress-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+}
+.progress-bar-btn{
+    position: absolute;
+    background-color: #39b54a;
+    height: 5px;
+    z-index: 1;
+    border: none;
+    width: 0;
+    transition: width 3s;
+}
+
+.progress-bar{
+    width: 32%;
+    border-radius: 0;
+    border: none;
+    height: 0px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+.progress-btn{
+    height: 13px;
+    width: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgrey;
+    z-index: 1;
+}
+.delivery-shipping-tracking-names{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.delivery-shipping-tracking-names span{
+    margin-top: 3px;
+    font-size: 13px;
+    color: rgb(159, 159, 159);
+}
+.delivery-shipping-tracking-names .packed-name{
+    margin-right: 3.5%;
+}
+.delivery-shipping-tracking-names .shipped-name{
+    margin-right: 1.5%;
+}
+.progress-btn1{
+    background-color: #39b54a;
+}
+
+.dotted-line-bar{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    z-index: 0;
+    background: transparent;
+    border: none;
+    border-top: dotted grey;
+}
+
+
+
+.ordered-products-div{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px rgb(240, 240, 240);
+    padding: 15px;
+    margin: 0;
+    position: relative;
+}
+.ordered-img-div{
+    width: 15%;
+    position: relative;
+}
+.ordered-products-div img{
+    width: 100%;
+}
+.Item-cancelled{
+    width: 90%;
+    height: 30px;
+    border: solid 1px #294356;
+    background-color: #294356;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    visibility: hidden;
+}
+
+.ordered-product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 70%;
+    padding: 10px;
+    margin-left: 2%;
+    width: 60%;
+}
+.product-name-p{
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+    width: 100%;
+    font-weight: lighter;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.ordered-product-details p{
+    line-height: 0;
+}
+
+.product-price-p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.product-Size,
+.product-Qty{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.order-tracking-main-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    align-items: start;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+}
+.ordered-tracking-container{
+    width: 73%;
+    background-color: #ffff;
+}
+
+.cancel-item{
+    position: absolute;
+    right: 5%;
+    top: 12%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #1A6F94;
+    cursor: pointer;
+}
+.Item-cancelled{
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+
+.cancel-item:hover{
+    text-decoration: underline;
+}
+
+.ordered-price-details-container{
+    width: 26%;
+    background-color: #ffff;
+    position: relative;
+    height: 280px;
+}
+.order-cost-details{
+    padding: 0 20px 0 20px;
+}
+.order-id-details{
+    background-color: #816633;
+    color: #ffff;
+    padding: 10px;
+    text-align: start;
+    line-height: 0.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.order-cost-details h2{
+    text-align: start;
+    font-size: 20px;
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+.order-cost-details div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+.order-total-div span{
+    font-weight: bold;
+}
+
+.ordered-saving-amt,
+.ordered-coupon-saving-amt{
+    color: #816633;
+}
+
+.confirm-cancel-item{
+    position: fixed;
+    height: 125px;
+    width: 310px;
+    background-color: #ffff;
+    top: 40%;
+    left: 40%;
+    border: solid 1px #816633;
+    z-index: 1;
+    visibility: hidden;
+}
+.confirm-cancel-item .title{
+    text-align: start;
+    margin-left: 18px;
+    font-weight: bold;
+}
+.confirm-cancel-item .instruction{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.confirm-cancel-item button{
+    width: 50%;
+    border: none;
+    height: 41px;
+    cursor: pointer;
+}
+.confirm-cancel-item .btn1{
+    background-color: #ffff;
+    border: solid 1px #816633;
+    color: #816633;
+}
+.confirm-cancel-item .btn2{
+    background-color: #816633;
+    color: #ffff;
+}

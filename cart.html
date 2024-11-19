@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="images/A-logo.png">
+    <title>Your Shopping Bag | AJIO</title>
+</head>
+<body>
+    <div class="cart-header-div">
+        <img class="cart-header-logo" onclick="location.href='index.html'" src="images/Ajio-Icon.png">
+        <h2 class="cart-header-name">My Bag <p class="cart-header-items">(<span class="cart-items-cnt"></span> Items)</p></h2>
+        <a class="cart-header-wishlist" href="wishlist.html">My Wishlist</a>
+        <a href="orders.html" class="cart-header-orders">My Orders</a>
+    </div>
+    <center>
+        <div class="delivery-date-div">
+            <img class="delivery-date-img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDfnYhmwM6gjA8LSb0EC_nMbi7VfB8s6oCABi_8R19GtELJIag">
+            <div class="delivery-titles">
+                <h2>Expected Delivery</h2>
+                <p>Estimated Delivery dates for your order</p>
+            </div>
+            <div class="delivery-dates">
+                <p>Est Delivery :<h2></h2></p>
+            </div>
+        </div>
+    </center>
+
+    <center class="cart-main-container-center">
+    <div class="cart-products-main-container">
+        <div class="cart-products-container">
+
+        </div>
+
+        <div class="payments-div-container">
+            <div class="payments-inner-div">
+            </div>
+            <div class="apply-coupon-div">
+                <h3>Apply Coupon</h3>
+                <div class="coupon-input-box-div">
+                    <div class="coupon-input-inner-div">
+                        <input class="couponInput" onkeydown="handleKey(event)" type="text" placeholder="Enter coupon code"><button class="coupon-apply-btn" onclick="couponCodeApply()">Apply</button>
+                    </div>
+                    <div class="applied-coupon-div">
+                        <div class="applied-coupon-inner-div">
+                            <p class="coupon-saving-p">You Save: Rs.<span class="coupon-saved"></span>.00</p><br>
+                            <p class="coupon-applied-p">Coupon applied: <span class="applied-code"></span></p>
+                        </div>
+                        <div class="remove-applied-code">
+                            <button onclick="couponCodeApply('remove')"><img src="https://www.pinclipart.com/picdir/big/141-1413228_png-file-svg-trash-can-vector-free-black.png" width="15px"></button>
+                        </div>
+                    </div>
+                </div>
+                <p class="invalid-coupon" style="color: red;">Invalid Coupon!</p>
+                <h3>AJIO Coupons</h3>
+                <form action="" class="coupon-form">
+                <div class="coupon1">
+                    <div class="label" data-value="false">
+                        <input type="radio" name="coupon" onclick="couponCode('code1')"><p class="saving">Savings : <span class="saving-price">₹<span class="saving-price1">78</span></span></p>
+                    </div>
+                    <div class="code-details">
+                        <p class="code code1">FREEDEL</p><br><p class="caption">Free Shipping on 799 and above. Just for you.</p>
+                    </div>
+                </div>
+                <div class="coupon2" data-value="false">
+                    <div class="label">
+                        <input type="radio" name="coupon" onclick="couponCode('code2')"><p class="saving">Savings : <span class="saving-price">₹<span class="saving-price2"></span></span></p>
+                    </div>
+                    <div class="code-details">
+                        <p class="code code2">SAVE8</p><br><p class="caption">Get upto 8% Off on 1499 and above.</p>
+                    </div>
+                </div>
+                <div class="coupon3" data-value="false">
+                    <div class="label">
+                        <input type="radio" name="coupon" onclick="couponCode('code3')"><p class="saving">Savings : <span class="saving-price">₹<span class="saving-price3"></span></span></p>
+                    </div>
+                    <div class="code-details">
+                        <p class="code code3">SPL15</p><br><p class="caption">Get upto 15% Off on 1999 and above.</p>
+                    </div>
+                </div>
+                <div class="coupon4" data-value="false">
+                    <div class="label">
+                        <input type="radio" name="coupon" onclick="couponCode('code4')"><p class="saving">Savings : <span class="saving-price">₹<span class="saving-price4"></span></span></p>
+                    </div>
+                    <div class="code-details">
+                        <p class="code code4">AJIOSPL</p><br><p class="caption">Get upto 25% Off on 2499 and above.</p>
+                    </div>
+                </div>
+                <div class="coupon5" data-value="false">
+                    <div class="label">
+                        <input type="radio" name="coupon" onclick="couponCode('code5')"><p class="saving">Savings : <span class="saving-price">₹<span class="saving-price5"></span></span></p>
+                    </div>
+                    <div class="code-details">
+                        <p class="code code5">PREMIYUM</p><br><p class="caption">Get upto 35% on 3499 and above.</p>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </center>
+
+    <div class="cart-empty-div">
+
+    </div>
+
+    <div class="bottom-div">
+        <div class="bottom-img-div">
+        <img src="images/handpicked-icon.png">
+        <img src="images/assured-quality-icon.png">
+        </div>
+        <div class="bottom-text-div">
+            <span>100% Handpicked</span>
+            <span>Assured Quality</span>
+        </div>
+    </div>
+    
+    <div class="bottom-main-div">
+        <img class="bottom-logo" src="images/ajio-bottom-logo.png">
+        <span class="copyright-sym">&copy; Sravani 2024</span>
+    </div>
+
+<script src="scripts/data.js"></script>
+<script src="scripts/cart.js"></script>
+</body>
+</html>

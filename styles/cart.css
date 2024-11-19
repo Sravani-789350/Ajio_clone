@@ -1,0 +1,449 @@
+.cart-header-div{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: solid 4px #294356;
+    border-bottom: solid 1px grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffff;
+    z-index: 2;
+}
+.cart-header-logo{
+    width: 8%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.cart-header-items{
+    color: #6D6D6D;
+}
+.cart-header-div h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 27%;
+}
+.cart-header-div p{
+    display: inline;
+}
+.cart-header-orders{
+    background-color: #294356;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    width: 8%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cart-header-orders:hover{
+    text-decoration: underline;
+}
+.cart-header-wishlist{
+    position: absolute;
+    top: 10%;
+    right: 19%;
+    text-decoration: none;
+    color: #6D6D6D;
+}
+.cart-header-wishlist:hover{
+    color: #176D93;
+    text-decoration: underline;
+}
+
+.delivery-date-div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 150px;
+    width: 93%;
+    position: relative;
+}
+.delivery-date-img{
+    width: 4%;
+    margin: 0 20px 0 30px;
+}
+.delivery-titles{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.delivery-titles h2,p{
+    line-height: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.delivery-titles h2{
+    font-size: 20px;
+}
+.delivery-titles p{
+    color: #666666;
+    font-size: 16px;
+}
+.delivery-dates{
+    position: absolute;
+    right: 33%;
+    bottom: 10px;
+}
+.delivery-dates h2,p{
+    display: inline;
+}
+.delivery-dates p{
+    font-size: 18px;
+}
+.delivery-dates h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    margin-left: 5px;
+}
+
+.product-img{
+    width: 20%;
+    height: 200px;
+}
+.product-name{
+    height: 30px;
+    line-height: 1.2;
+    width: 100%;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2C4152;
+}
+.product-names-div{
+   width: 50%;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   padding: 10px 0 0 20px;
+}
+
+
+.cart-products-main-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.cart-product-main-div{
+    width: 100%;
+    border: solid 1.5px lightgrey;
+    display: flex;
+    height: 200px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.cart-products-container{
+    width: 68%;
+}
+
+.payments-div-container{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+.payments-inner-div{
+    width: 100%;
+    height: 320px;
+    background-color: #f8f8f8;
+    border: solid 1px lightgrey;
+    text-align: start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.payments-inner-div h3{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.payments-inner-div h4{
+    line-height: 0;
+}
+.payments-inner-div div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    margin: 10px 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.coupon-discount-div{
+    height: 0;
+    margin: 0;
+}
+.Delivery-fee-div span {
+    color: #6D6D6D;
+}
+.bag-discount-span{
+    color: #866528;
+}
+.coupon-price{
+    color: #866528;
+}
+.place-order-btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    color: #ffff;
+    background-color: #866528;
+    border: none;
+    cursor: pointer;
+}
+.place-order-btn:hover{
+    background-color: #6d5832;
+} 
+
+.product-size,
+.product-qty{
+    border: solid 1px lightgrey;
+    border-radius: 3px;
+    margin-right: 30px;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    outline: none;
+}
+
+.product-s-q-div label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 3px;
+}
+
+.product-prices-div{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    align-items: end;
+    padding: 2%;
+    position: relative;
+}
+.product-prices-div div{
+    margin-bottom: 10px;
+}
+.savings-title{
+    font-size: 18px;
+    color: #666666;
+    margin: 0 0 10px 0;
+}
+.product-savings{
+    color: #866528;
+    font-weight: bold;
+    font-size: 20px;
+}
+.discounted-price{
+    color: #866528;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: line-through;
+}
+.discount-percentage{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #866528;
+    font-weight: bold;
+}
+.order-total-price{
+    font-weight: bold;
+    line-height: 3;
+}
+.product-price{
+    border: solid 1px #E1ECF1;
+    background-color: #E1ECF1;
+    border-left: solid 5px #294356;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.delete-product-btn,
+.cart-product-wishlist-btn{
+    position: absolute;
+}
+.delete-product-btn{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #176D93;
+    cursor: pointer;
+    right: 23%;
+    bottom: 11%;
+}
+.cart-product-wishlist-btn{
+    font-size: 16px;
+    font-weight: bold;
+    color: #176D93;
+    right: 2%;
+    bottom: 5%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.apply-coupon-div{
+    padding: 0 20px 0 20px;
+    margin-top: 20px;
+    border-style: dotted;
+    border-color: #866528;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.coupon-apply-btn{
+    width: 30%;
+    height: 51px;
+    border: solid 3px #f0f0f0;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.couponInput{
+    width: 65%;
+    height: 45px;
+    border: solid 2px #f0f0f0;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.couponInput:focus{
+    outline-color: #866528;
+}
+
+.saving{
+    font-weight: bold;    
+}
+.saving-price{
+    color: #866528;
+}
+.label{
+    height: 18px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+.label input{
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #866528;
+}
+
+.code-details{
+    margin: 10px 0 30px 20px;
+}
+.code{
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.coupon-form{
+    overflow-y: scroll;
+    height: 230px;
+}
+
+.invalid-coupon{
+    visibility: hidden;
+}
+.coupon-input-box-div{
+    position: relative;
+}
+.applied-coupon-div{
+    border: solid 1px #39B54A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 93%;
+    height: 50px;
+    background-color: #EDF4E5;
+    padding: 0 10px 0 10px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    visibility: hidden;
+}
+.coupon-saving-p{
+    color: #D4A048;
+    font-weight: bold;
+    font-size: 17px;
+}
+.coupon-applied-p{
+    color: #39B54A;
+    font-size: 14.5px;
+}
+.remove-applied-code button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.coupon1,
+.coupon2,
+.coupon3,
+.coupon4,
+.coupon5{
+    opacity: 0.3;
+}
+.coupon1 input,
+.coupon2 input,
+.coupon3 input,
+.coupon4 input,
+.coupon5 input{
+    pointer-events: none;
+}
+
+.cart-empty-div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.cart-empty-div h2{
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.empty-cart-btn{
+    width: 16%;
+    height: 50px;
+    background-color: #866528;
+    border: none;
+    font-size: 17px;
+    color: #ffff;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+}
+.empty-cart-btn:hover{
+    background-color: #6d5832;
+}
+.empty-cart-btn2{
+    background: transparent;
+    border: none;
+    color: #176D93;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.empty-cart-img-div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+.empty-cart-img-div img{
+    margin: 0 20px 0 20px;
+}

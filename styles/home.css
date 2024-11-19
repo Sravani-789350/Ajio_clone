@@ -1,0 +1,429 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.home-page-posters{
+    margin-top: 120px;
+}
+.all-poster,
+.kids-poster,
+.men-poster,
+.women-poster{
+    cursor: pointer;
+    transition: 1s ease;
+}
+.all-poster:hover,
+.men-poster:hover,
+.women-poster:hover,
+.kids-poster:hover{
+    width: 100%;
+}
+
+
+.poster{
+    transition: 1s ease;
+}
+.poster:hover{
+    width: 100%;
+}
+
+.header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    position: fixed;
+    background-color: #ffff;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: solid 4px #496379;
+}
+.header-Ajio-logo{
+    width: 130px;
+    margin-left: 7%;
+    cursor: pointer;
+}
+.header-category-div{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+.header-category-div span{
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.header-category-div span:hover{
+    font-weight: bold;
+}
+.header-search-div{
+    width: 28%;
+    height: 35px;
+    padding-left: 15px;
+    position: absolute;
+    bottom: 10%;
+    right: 11.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-search{
+    width: 80%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: solid 1px grey;
+    height: 35px;
+    border-right: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 15px;
+    background-color: #fffded;
+}
+.header-search-logo{
+    width: 15%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: solid 1px grey;
+    height: 38.5px;
+    background-color: #ffff;
+    border-left: none;
+    cursor: pointer;
+    background-color: #fffded;
+}
+.header-search-logo img{
+    width: 45%;
+}
+
+.wish-list-btn,
+.cart-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid 1px #2c4152;
+    background-color: #2c4152;
+    position: absolute;
+    cursor: pointer;
+}
+.cart-btn{
+    right: 4%;
+    bottom: 10%;
+}
+.cart-btn img{
+    width: 100%;
+}
+.wish-list-btn{
+    font-size: 30px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10%;
+    right: 7.5%;
+}
+.empty-wishlist-div p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.empty-wishlist-div h4{
+    font-size: 13px;
+    font-weight: lighter;
+    color: grey;
+    margin: 40px 0 20px 0;
+}
+.empty-wishlist-div button{
+    width: 200px;
+    height: 50px;
+    color: #ffff;
+    background-color: #816633;
+    border: solid 1px #816633;
+    cursor: pointer;
+}
+
+
+.products-main-div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10%;
+}
+.product-wishlist-btn{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2%;
+    top: 0.5%;
+    background-color: transparent;
+    border: none;
+    color: #816633;
+    cursor: pointer;
+}
+.remove-Wishlist-icon{
+    position: absolute;
+    right: 5px;
+    background: transparent;
+    border: none;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+.product-main-div{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+.size-alert-span{
+    position: fixed;
+    z-index: 3;
+    font-size: 18px;
+    color: #ffff;
+    width: 100%;
+    border: none;
+    left: 0;
+    top: 10%;
+    height: 3.5%;
+    background-color: #294356;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.img-div{
+    width: 100%;
+    height: 50%;
+}
+.img-div img{
+    width: 100%;
+    height: 100%;
+}
+
+.info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-div p{
+    line-height: 1.2;
+}
+
+.brand-name{
+    color: #816633;
+    font-weight: bold;
+}
+
+.rating-box{
+    color: #ffff;
+    width: 90px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.info{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 40px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.actual-price{
+    font-size: 13px;
+    text-decoration: line-through;
+    margin: 0 5px 0;
+    opacity: 0.8;
+}
+
+.discount{
+    font-size: 13px;
+    color: #816633;
+}
+
+.rating{
+    font-size: 15px;
+}
+
+.rating-count{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.add-to-bag{
+    width: 90%;
+    height: 40px;
+    background-color: #816633;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-to-bag:hover{
+    background-color: #6d5832;
+}
+
+.add-to-bag img{
+    width: 25px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.size-div{
+    margin-bottom: 20px;
+}
+.size-div button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid 1px grey;
+    background-color: #ffff;
+    font-size: 13px;
+    margin: 5px;
+    cursor: pointer;
+}
+.Footware button{
+    margin: 3px;
+}
+.kids-Fashion button{
+    margin: 6px 2px 5px 2px;
+    width: 60px;
+    height: 35px;
+    border-radius: 20px;
+}
+.size-div button:hover{
+    background-color: #2c4152;
+    color: #ffff;
+}
+
+.pagination-div{
+    width: 280px;
+    height: auto;
+    margin: 50px 0 50px 0;
+}
+.pagination-div button{
+    height: 40px;
+    margin: 0;
+    background-color: #ffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pagination-div button:hover{
+    background-color: black;
+    color: #ffff;
+}
+.first,
+.second,
+.third{
+    width: 40px;
+    border: solid 1px grey;
+    border-left: none;
+    border-right: none;
+}
+.next,
+.previous{
+    width: 80px;
+}
+
+.previous{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: solid 1px grey;
+    border-right: none;
+}
+.next{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: solid 1px grey;
+    border-left: none;
+}
+
+.bottom-div{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    border-top: solid 3px #496379;
+    border-bottom: solid 3px #496379;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-img-div img{
+    width: 70px;
+    margin: 0 180px 0 180px;
+}
+.bottom-text-div span{
+    margin: 0 165px 0 157px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bottom-main-div{
+    background-color: #294356;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.bottom-logo{
+    width: 15%;
+    height: 60%;
+    margin: 2% 0 0 45%;
+    cursor: pointer;
+}
+
+
+.copyright-sym{
+    color: #ffff;
+    margin: 12.5% 0 0 -10%;
+    font-size: 10px;
+}
+
+.empty-search-div{
+    border: solid 5px #faf6e3;
+    margin: 30px 0 300px 0;
+    width: 80%;
+}
+.search-couldnt-find{
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+.search-item-name{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 0.5;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.empty-search-div div{
+    width: 15%;
+    height: 0;
+    border: solid 1.5px #816633;
+    margin: 0;
+}
+.empty-search-div p{
+    font-size: 15px;
+    color: grey;
+}
